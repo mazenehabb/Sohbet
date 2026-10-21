@@ -1,0 +1,67 @@
+/**
+ * Sohbet design tokens — Tailwind v4, CSS-first.
+ *
+ * Import this after the Tailwind import in your entry stylesheet:
+ *
+ *   @import "tailwindcss";
+ *   @import "./tokens.css";
+ *
+ * Every variable below becomes a Tailwind utility automatically
+ * (e.g. --color-primary → bg-primary / text-primary / border-primary,
+ * --radius-field → rounded-field, --shadow-button → shadow-button).
+ * Verified against tailwindcss@4 locally before shipping.
+ */
+@theme {
+    /* surfaces */
+    --color-canvas: #faf8f4;
+    /* page background, form side */
+    --color-surface: #ffffff;
+    /* cards, inputs */
+    --color-panel: #1b1640;
+    /* dark brand-panel background */
+    --color-panel-muted: #b8b2d1;
+    /* secondary text on the dark panel */
+
+    /* text */
+    --color-ink: #171330;
+    /* primary text */
+    --color-ink-muted: #6b6680;
+    /* secondary text */
+    --color-ink-subtle: #9d97b5;
+    /* placeholders, fine print */
+
+    /* brand */
+    --color-primary: #332b82;
+    --color-primary-strong: #2a2369;
+    /* hover/active */
+    --color-accent: #8b5cf6;
+    --color-accent-soft: #c4b5fd;
+
+    /* structure */
+    --color-line: #e6e1f2;
+    /* hairline borders */
+
+    /* feedback */
+    --color-success: #15803d;
+    --color-warning: #b45309;
+    --color-error: #be123c;
+    /* error copy (4.5:1+ on canvas) */
+    --color-error-border: #fb7185;
+    --color-error-ring: #ffe4e6;
+
+    /* type */
+    --font-display: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    /* body/UI text uses Tailwind's default font-sans — not overridden */
+
+    /* radii — one value per role instead of ad hoc lg/xl/full mixing */
+    --radius-field: 0.625rem;
+    /* inputs, buttons, pills */
+    --radius-panel: 1.25rem;
+    /* cards, larger surfaces */
+
+    /* elevation — used once each, not stacked per element */
+    --shadow-button: 0 10px 15px -3px rgb(51 43 130 / 0.15),
+        0 4px 6px -4px rgb(51 43 130 / 0.1);
+    --shadow-card: 0 1px 2px rgb(23 19 48 / 0.04),
+        0 8px 24px -4px rgb(23 19 48 / 0.08);
+}
